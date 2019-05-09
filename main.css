@@ -1,0 +1,78 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*.profile-card{
+  background-color: yellow;
+}
+.head, .content{
+  background-color: green;
+}
+.profile-image, .name-headline, .content, .links{
+  background-color: red;
+}*/
+/* Pozicionálás */
+
+.profile-card {
+
+  width: 450px;
+  max-width: calc(100vw - 20px);
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+  margin: 20%;
+ 
+}
+
+body {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://i.imgur.com/eU9B4PT.jpg')  no-repeat center center fixed;
+  background-size: cover;
+}
+.head, .content, .links {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+img {
+  width: 120px;
+  height: auto;
+  border-radius: 20%;
+}
+.profile-image {
+  margin-top: -20px;
+}
+
+/*.head {
+  margin-bottom: 10%;
+  margin-top: 20%
+}*/
+
+.content {
+  padding: 5% 10%;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+ img {
+  padding: 1px;
+  background-color: #666;
+  filter: grayscale(30%)
+}
+
+  img:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(5%); 
+}  
+  /* Contact links */
+
+ul {
+  list-style-type: none;
+}
